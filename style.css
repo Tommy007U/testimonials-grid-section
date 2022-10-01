@@ -1,90 +1,81 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 *{
     box-sizing: border-box;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 body{
-    background-color:#ecf2f8;
+    background-color: #ecf2f8;
 }
 #testimonial-grid-container{
-    padding: 5% 3%;   /* 5% top n dwn, 3% left n rirght */
+    padding: 5% 3%;
 }
-
 #testimonial-1{
-    background-color: #7541c8;
-    color:#FFFFFF;
-
+    background-color: #7541c8; 
+    color: #FFFFFF;
 }
 #testimonial-2{
     background-color:#48556a;
-    color:#FFFFFF;
-    
+    color: #FFFFFF;
 }
 #testimonial-3{
-    background-color: #FFFFFF;
-    color: #48556a;
+    background-color: #FFFFFF; 
 }
 #testimonial-4{
     background-color: #19212e;
-    color:#FFFFFF;
-    
+    color: #FFFFFF;
 }
 #testimonial-5{
-    background-color: #FFFFFF;
-    color:#48556a;
-    
+    background-color: #FFFFFF;   
 }
 .grid-item{
     margin-bottom: 20px;
     padding: 20px;
 }
-.header{
-    display:flex;
-    align-items: center;
-    margin-bottom:20px;
 
-}
-.header img{
-    border-radius:50%;
-    
-}
-@media (min-width:576px){
-
-    #testimonial-grid-container,
-        #main-left
-        #top,
-        #bottom{
-            display: flex;
-        }
-    
-
+@media (min-width: 576px){
     #testimonial-grid-container{
         display: flex;
-        max-width:900px;
-        margin: 0 auto; 
-        justify-content: space-between;
     }
     #testimonial-5{
-        flex-basis: 25px;
+        flex-basis: 25%;
     }
     #main-left{
+        display: flex;
         flex-direction: column;
-        flex-basis: 75%;
     }
-    #main-left .grid-item{
-        margin-right: 15px;
-    }
-    #top, #bottom{
-        
+    #top{
+        display: flex;
         flex-basis: 50%;
-    
     }
-    #testimonial-1, #testimonial4{
-        flex-basis: 65%;
+    #bottom{
+        display: flex;
+        flex-basis: 50%;
+    }
+    #testimonial-1{
         
     }
-    #testimonial-2, #testimonial-3{
-        flex-basis: 35%;
+    #testimonial-2{
+        
     }
-    
+    #testimonial-3{
+        
+    }
+    #testimonial-4{
+        
+    }
+
 }
